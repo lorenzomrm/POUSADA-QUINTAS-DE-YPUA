@@ -54,7 +54,7 @@ document.getElementById('form-edicao').addEventListener('submit', function (even
         alerta.style.display = 'block';
         setTimeout(function() {
             alerta.style.display = 'none';
-            window.location.href = 'MenuPrincipal.html';
+            window.location.href = 'Acomodacoes.html';
         }, 3000);
     }
 });

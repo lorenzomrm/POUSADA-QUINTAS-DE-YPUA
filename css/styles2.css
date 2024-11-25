@@ -89,3 +89,11 @@ input::placeholder {
     font-size: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.logo {
+    position: absolute;  
+    top: -20px;          
+    left: -20px;          
+    width: 250px;         
+    height: auto;        
+    z-index: 5;         
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Funcionários</title>
+  <link rel="stylesheet" href="../css/Cadastro.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Funcionários</h1>
+    <form action="#" method="post">
+      <label for="nmUsuario">Nome de Usuário:</label>
+      <input type="text" id="nmUsuario" name="nmUsuario" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+
+      <label for="cdFuncionario">Código do Funcionário:</label>
+      <input type="number" id="cdFuncionario" name="cdFuncionario" required>
+
+      <label for="nuCpf">CPF:</label>
+      <input type="text" id="nuCpf" name="nuCpf" required>
+
+      <label for="nmFuncionario">Nome do Funcionário:</label>
+      <input type="text" id="nmFuncionario" name="nmFuncionario" required>
+
+      <label for="nmCargo">Cargo:</label>
+      <input type="text" id="nmCargo" name="nmCargo" required>
+
+      <label for="status">Status:</label>
+      <select id="status" name="status" required>
+        <option value="">Selecione</option>
+        <option value="Ativo">Ativo</option>
+        <option value="Inativo">Inativo</option>
+      </select>
+
+      <label for="dtAdmissao">Data de Admissão:</label>
+      <input type="date" id="dtAdmissao" name="dtAdmissao" required>
+
+      <label for="vlSalario">Salário:</label>
+      <input type="number" step="0.01" id="vlSalario" name="vlSalario" required>
+
+      <label for="dtNascimento">Data de Nascimento:</label>
+      <input type="date" id="dtNascimento" name="dtNascimento" required>
+
+      <label for="contato">Contato:</label>
+      <input type="text" id="contato" name="contato" required>
+
+      <label for="turnoTrabalho">Turno de Trabalho:</label>
+      <select id="turnoTrabalho" name="turnoTrabalho" required>
+        <option value="">Selecione</option>
+        <option value="Manhã">Manhã</option>
+        <option value="Tarde">Tarde</option>
+        <option value="Noite">Noite</option>
+      </select>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+</body>
+</html>

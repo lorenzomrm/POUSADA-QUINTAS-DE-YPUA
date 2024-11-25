@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .error{
+        color:red;
+    }
+    body{
+        background-color:#DFC8B6;
+    }
+    header{
+        border: 4px black;
+        border-radius: 20px;
+        text-align: center;
+        background-color:#859B48;
+        margin: 20px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    content{
+        text-align: center;
+        background-color: brown;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .input{
+        text-align: center;
+        border-radius: 10px;
+    }
+    .botao{
+        text-align: center;
+        border-radius: 15px;
+    }
+    button:hover{
+        background-color: #859B48;
+    }
+    input{
+        height: 22px;
+        border-radius: 15px;
+        width: 400px;
+    }
+    .descricao{
+        height: 200px;
+    }
+    a.button1{
+        padding: 20px;
+        padding-left: 70px;
+        padding-right: 70px;
+        height:50px;
+        border-radius: 20px;
+        width: 300px;
+        font-family: cursive;
+        background-color:#C4C7B6;
+        border: 5px rgb(163, 152, 130) outset;
+    }
+    a.button1:hover{
+        background-color:  #859B48;
+    }
+    a.button{
+        padding: 20px;
+        padding-left: 85px;
+        padding-right: 85px;
+        height:50px;
+        border-radius: 20px;
+        width: 300px;
+        font-family: cursive;
+        background-color: #C4C7B6;
+        border: 5px rgb(163, 152, 130) outset;
+    }
+    a.button:hover{
+        background-color: #859B48
+    }
+    input[type="textarea"]{
+        height: 80px;
+        border-radius: 15px;
+        width: 400px;
+        
+    }
+    
+</style>
+<body>
+    <header>
+        <h1>Cadastrar Acomodação</h1>        
+    </header>
+    <content>
+        <h4>Defina a data do cadastro</h4>
+        <div input>
+            <input
+            type="date"
+            name="myDate"
+            min="2024-01-01"
+            max="2600-01-01"
+            step="1"
+            id="myDate" />
+        </div>
+        <h4>Digite o número da acomodaçao</h4>
+        <div input>
+            <input type="number" id="texto" name="texto">
+        </div>
+        <h4>Defina a quantidade de pessoas</h4>
+        <div input>
+                <p>
+                  <form id="form1">
+                    <input class="box" list="quantidade" name="quantidade">
+                    <datalist id="quantidade">
+                      <option value=" 1">
+                      <option value=" 2">
+                      <option value=" 3">
+                      <option value=" 4">
+                      <option value=" 5">
+                      <option value=" 6">
+             </datalist>
+            </form>
+          </p>
+        </div>
+        <h4>Defina o andar da acomodação</h4>
+        <div input>
+            <p>
+                <form id="form2">
+                  <input class="box" list="andar" name="andar">
+                  <datalist id="andar">
+                    <option value=" 1">
+                    <option value=" 2">
+                    <option value=" 3">
+           </datalist>
+          </form>
+        </p>
+        </div>
+        <h4>Digite o preço da acomodação</h4>
+        <div input>
+            <input type="number" id="texto" name="texto">
+        </div>
+        <h4>Digite o número de camas</h4>
+        <div input>
+            <input type="number" id="texto" name="texto">
+        </div>
+        <h4>Digite o código do fucionário</h4>
+        <div input>
+            <input type="password" id="texto" name="texto">
+        </div>
+        <h4>Digite a descrição da acomodação</h4>
+        <div descricao>    
+            <input type="textarea" id="texto" name="texto">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div botao>
+            <a href="index.html" class="button" onclick="cadastrar">  Voltar  </a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div botao>
+            <a href="MenuPrincipal.html" class="button1" onclick="cadastrar" >Cadastrar</a>
+        </div>
+    </content>
+</body>
+</html>

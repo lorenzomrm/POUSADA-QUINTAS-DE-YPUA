@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ECE5DF;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  background-color: #C4C7B6;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.container h1 {
+  color: #859B48;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #859B48; 
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #859B48;
+  border-radius: 5px;
+  background-color: #ECE5DF; /* Fundo dos campos */
+  font-size: 14px;
+  color: #333;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #6F7F37; /* Cor ao focar */
+  box-shadow: 0 0 5px rgba(111, 127, 55, 0.5);
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #859B48; /* Fundo do botão */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #6F7F37; /* Efeito ao passar o mouse */
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(1);
+}
+
+option {
+  color: #333;
+  background-color: #ECE5DF;
+}

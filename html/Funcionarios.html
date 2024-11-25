@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Funcionários</title>
+    <link rel="stylesheet" href="../css/Funcionarios.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/Pousada_Quinta_do_Ypuã-removebg-preview.png" alt="aa" id="logo">
+        </div>
+        <section class="menu">
+            <nav>
+                <a href="../html/MenuPrincipal.html">Menu Principal</a>
+                <a href="../html/Funcionarios.html">Funcionários</a>
+                <a href="consulta.html">Clientes</a>
+                <a href="imc.html">Acomodações</a>
+                <a href="equipe.html">Reservas</a>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <h2>Gerenciamento de Funcionários</h2>
+        <p>Gerencie os funcionários cadastrados na pousada.</p>
+
+        <button class="cadastro"><a href="../html/Cadastros.html">Adicionar Novo Funcionário</a></button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cargo</th>
+                    <th>Contato</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-funcionarios">
+                <tr>
+                    <td>João Silva</td>
+                    <td>Recepcionista</td>
+                    <td>(11) 98765-4321</td>
+                    <td><span class="status inativo">Inativo</span></td>
+                    <td>
+                        <button onclick="editarFuncionario('João Silva')">Editar</button>
+                        <button onclick="excluirFuncionario('João Silva')">Excluir</button>
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>Maria Souza</td>
+                    <td>Camareira</td>
+                    <td>(11) 98765-4322</td>
+                    <td><span class="status ativo">Ativo</span></td>
+                    <td>
+                        <button onclick="editarFuncionario('Maria Souza')">Editar</button>
+                        <button onclick="excluirFuncionario('Maria Souza')">Excluir</button>
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pousada Quinta do Ypuã | Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+           
+
+        function editarFuncionario(nome) {
+            alert(`Editar informações do funcionário: ${nome}`);
+        }
+
+        function excluirFuncionario(nome) {
+            const confirmar = confirm(`Tem certeza que deseja excluir o funcionário ${nome}?`);
+            if (confirmar) {
+                alert(`${nome} foi excluído.`);
+                
+            }
+        }
+    </script>
+</body>
+</html>

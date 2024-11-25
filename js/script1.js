@@ -29,7 +29,7 @@ document.getElementById('form-cadastro').addEventListener('submit', function (ev
         alerta.style.display = 'block';
         setTimeout(function() {
             alerta.style.display = 'none';
-            window.location.href = '../html/EditarConta.html';
+            window.location.href = 'EditarConta.html';
         }, 3000);
     }
 });

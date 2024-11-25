@@ -52,7 +52,7 @@ document.getElementById('form-cadastro').addEventListener('submit', function (ev
         alerta.style.display = 'block';
         setTimeout(function() {
             alerta.style.display = 'none';
-            window.location.href = '../html/Login.html';
+            window.location.href = 'Login.html';
         }, 3000);
     }
 });
